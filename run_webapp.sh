@@ -62,4 +62,8 @@ sleep 1
 echo "BACKEND=$BACK_PID PORT=$API_PORT LOG=/tmp/backend.log"
 echo "FRONTEND=$FRONT_PID PORT=$FRONT_PORT LOG=/tmp/frontend.log"
 echo "Open: http://localhost:$FRONT_PORT/"
+if [ -n "${NO_WAIT:-}" ]; then
+  echo "NO_WAIT set; not waiting on backend process (PID $BACK_PID)"
+  exit 0
+fi
 wait $BACK_PID

@@ -16,6 +16,7 @@ dist/
 coverage.xml
 .DS_Store
 *.log
+*.keystore
 /backend/classifier.pth
 /backend/chunks_log.jsonl
 /backend/models/
@@ -25,6 +26,7 @@ coverage.xml
 /backend/*.pid
 /.backend.pid
 /.frontend.pid
+/.expo.pid
 /third_party/
 /sdk_src/
 /class-attendance/
@@ -44,7 +46,6 @@ coverage.xml
 /mobile-expo/android/app/build/
 /mobile-expo/ios/DerivedData/
 /mobile-expo/ios/build/
-/mobile-expo/*.keystore
 .env
 .env.local
 .env.*.local
